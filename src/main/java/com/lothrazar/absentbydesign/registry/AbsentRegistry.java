@@ -488,6 +488,11 @@ public class AbsentRegistry {
       reg.register("trapdoor_purpur", createTrap(Blocks.PURPUR_BLOCK, Block.Properties.of(), type));
       reg.register("trapdoor_quartz", createTrap(Blocks.QUARTZ_BLOCK, Block.Properties.of(), type));
       reg.register("trapdoor_mud_bricks", createTrap(Blocks.MUD_BRICKS, Block.Properties.of(), type));
+      reg.register("trapdoor_chiseled_sandstone", createTrap(Blocks.CHISELED_SANDSTONE, Block.Properties.of(), type));
+      reg.register("trapdoor_chiseled_stone_bricks", createTrap(Blocks.CHISELED_STONE_BRICKS, Block.Properties.of(), type));
+      reg.register("trapdoor_mossy_cobblestone", createTrap(Blocks.MOSSY_COBBLESTONE, Block.Properties.of(), type));
+      reg.register("trapdoor_mossy_stone_bricks", createTrap(Blocks.MOSSY_STONE_BRICKS, Block.Properties.of(), type));
+      reg.register("trapdoor_smooth_stone", createTrap(Blocks.SMOOTH_STONE, Block.Properties.of(), type));
     });
   }
 
