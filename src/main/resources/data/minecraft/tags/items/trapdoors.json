@@ -13,6 +13,11 @@
     "absentbydesign:trapdoor_end_stone",
     "absentbydesign:trapdoor_purpur",
     "absentbydesign:trapdoor_quartz",
-    "absentbydesign:trapdoor_mud_bricks"
+    "absentbydesign:trapdoor_mud_bricks",
+    "absentbydesign:trapdoor_chiseled_sandstone",
+    "absentbydesign:trapdoor_chiseled_stone_bricks",
+    "absentbydesign:trapdoor_mossy_cobblestone",
+    "absentbydesign:trapdoor_mossy_stone_bricks",
+    "absentbydesign:trapdoor_smooth_stone"
   ]
 }
