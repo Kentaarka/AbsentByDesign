@@ -36,7 +36,6 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.RegistryObject;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbsentRegistry {
@@ -53,8 +52,6 @@ public class AbsentRegistry {
   // AVOID PILLAR
   // AVOID CHISELED?
   // AVOID GLAZED TERRACOTTA
-  // 
-  //1.19 NEW ADD THIS 
   //
   //
   //

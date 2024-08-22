@@ -84,10 +84,14 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         server {
             property 'forge.enabledGameTestNamespaces', mod_id
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             args '--nogui'
         }
 
@@ -123,6 +127,7 @@ repositories {
     url = 'https://maven.theillusivec4.top/'
   }
   maven { url = 'https://maven.blamejared.com' }    
+  maven { url = 'https://modmaven.dev'  }       
   maven { url = 'https://www.cursemaven.com'  }
 }
 
@@ -132,8 +137,14 @@ dependencies {
     // The "userdev" classifier will be requested and setup by ForgeGradle.
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
-    minecraft "net.neoforged:forge:${mc_version}-${forge_version}"
+    minecraft "net.neoforged:forge:${mc_version}-${neo_version}"
 
+
+     //optional integrations
+
+   // implementation fg.deobf("curse.maven:cyclic-239286:5620124")
+    implementation fg.deobf("curse.maven:jade-324717:5640610")
+ 
     // required dependency
     implementation fg.deobf("curse.maven:flib-661261:${flib_file}")
 
