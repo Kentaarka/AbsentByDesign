@@ -36,7 +36,6 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.RegistryObject;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AbsentRegistry {
@@ -53,8 +52,6 @@ public class AbsentRegistry {
   // AVOID PILLAR
   // AVOID CHISELED?
   // AVOID GLAZED TERRACOTTA
-  //
-  //1.19 NEW ADD THIS
   //
   //
   //
@@ -113,7 +110,7 @@ public class AbsentRegistry {
       reg.register("fence_log_spruce", createFence(Blocks.SPRUCE_LOG, Block.Properties.of().ignitedByLava()));
       reg.register("fence_red_netherbrick", createFence(Blocks.RED_NETHER_BRICKS, Block.Properties.of()));
       reg.register("fence_crimson", createFence(Blocks.CRIMSON_STEM, Block.Properties.of().ignitedByLava()));
-      reg.register("fence_warped", createFence(Blocks.OBSIDIAN, Block.Properties.of()));
+      reg.register("fence_warped", createFence(Blocks.WARPED_STEM, Block.Properties.of()));
       reg.register("fence_obsidian", createFence(Blocks.OBSIDIAN, Block.Properties.of()));
       FENCE_QUARTZ = (BlockAbsentFence) createFence(Blocks.QUARTZ_BLOCK, Block.Properties.of());
       reg.register("fence_quartz", FENCE_QUARTZ);
